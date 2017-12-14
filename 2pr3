@@ -1,0 +1,8 @@
+#!/bin/bash
+cat ~/bash.txt|grep 000000 bash.txt > /tmp/zeroes
+head /tmp/zeroes
+tail /tmp/zeroes
+cat ~/bash.txt| grep -v 000000 bash.txt > /tmp/nozeroes
+head /tmp/nozeroes
+tail /tmp/nozeroes
+
