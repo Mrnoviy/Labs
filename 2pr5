@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Files"
+for file in $(find ~ -maxdepth 1 -name "*.txt")
+do
+cat "$file" >> /tmp/big.txt
+echo "$file"
+done
+echo "Size bites" 
+du -h /tmp/big.txt | cut -d' ' -f1
+echo "Size Lines"
+wc -l /tmp/big.txt |cut -d' ' -f1
+rm /tmp/big.txt
