@@ -1,0 +1,6 @@
+#!/bin/bash
+s=$(pwd)
+echo "catalogi"
+ls -lF $s |grep d| sort -k9
+echo "usually files"
+ls -lF $s|grep "^-"|sort -k9

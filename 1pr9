@@ -1,0 +1,2 @@
+#!/bin/bash
+ps -eo fname,size --sort -size|head -c5

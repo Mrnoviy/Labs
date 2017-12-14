@@ -1,0 +1,5 @@
+#!/bin/bash
+Echo "Дороу"
+date | cut -d' ' -f4
+cal
+cat ~/todo

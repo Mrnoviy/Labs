@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Домашний каталог пользователя"
+whoami
+echo "Содержит обычных файлов"
+find ~ -type f | wc -l
+echo "Скрытых файлов"
+ls -ld ~/.* | grep -v "^d" | wc -l
