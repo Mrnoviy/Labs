@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~
+./2pr1
+less /tmp/run.log
